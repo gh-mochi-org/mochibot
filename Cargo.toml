@@ -4,7 +4,38 @@ members = [
   "crates/mochibot-daemon",
   "crates/mochibot-memory",
   "crates/mochibot-security",
-  "desktop/mochibot-app/src-tauri"
+  "desktop/mochibot-app/src-tauri",
 ]
 resolver = "2"
 
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = [
+  "idotconfig",
+  "aka.config@proton.me",
+  "gh-mochi",
+  "gh-mochi-org",
+  "git.mochi@protonmail.com",
+]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+tokio = { version = "1.50.0", features = ["full"] }
+sea-orm = { version = "2.0.0-rc.37", features = [
+  "sqlx-sqlite",
+  "runtime-tokio-native-tls",
+] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.149" }
+thiserror = "2.0.18"
+anyhow = "1.0.102"
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+uuid = "1.22.0"
+chrono = "0.4.44"
+dirs = "6.0.0"
+argon2 = "0.6.0-rc.7"
+aes-gcm = "0.11.0-rc.3"
+rand = "0.10.0"
+sha2 = "0.11.0-rc.5"
