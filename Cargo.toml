@@ -1,0 +1,10 @@
+[workspace]
+members = [
+  "crates/mochibot-core",
+  "crates/mochibot-daemon",
+  "crates/mochibot-memory",
+  "crates/mochibot-security",
+  "desktop/mochibot-app/src-tauri"
+]
+resolver = "2"
+

@@ -1,0 +1,71 @@
+# Rust
+target/
+Cargo.lock
+
+# Bun / Node
+node_modules/
+bun.lock
+dist/
+.cache/
+
+# Flutter / Dart
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/pubspec.lock
+*.g.dart
+
+# CMake / Native
+native/build/
+native/CMakeCache.txt
+native/CMakeFiles/
+native/cmake-build-*/
+native/conan/
+native/install/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Python
+python/venv/
+python/__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Tauri
+desktop/src-tauri/target/
+desktop/node_modules/
+desktop/dist/
+desktop/.svelte-kit/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.zed/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Proto generated
+proto/gen/
